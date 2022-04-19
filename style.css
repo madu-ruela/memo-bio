@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+	--body-bg-color: #090f48;
+	--body-text-color: #fff;
+	--title-text-color: #fff;
+	--text-color: #fff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+}
+
+body {
+	background-color: #201b2c;
+}
+
+header{
+	display: flex;
+	padding: 10px 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header img {
+	width: 300px;
+	height: 100px;
+	object-fit: cover;
+}
+
+header > div {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+
+header nav ul {
+	display: flex;
+	gap: 20px;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	transition: all 0.3s;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+header nav ul li a:hover {
+	background-color: #00ff88;
+}
+
+button {
+	display: flex;
+	background-color: #00ff88;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 20px;
+	align-items: center;
+	cursor: pointer;
+}
+button a{
+	text-decoration: none;
+	color: #fff;
+}
+
+button:hover {
+	filter: brightness(0.8);
+}
+
+main {
+	width: 100%;
+}
+
+main > section {
+	width: 100%;
+}
+
+#inicio {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid yellow;
+	color: #fff;
+}
+
+#inicio > div{
+	width: 40%;
+}
+
+#inicio > div img{
+	width: 100%;
+}
+
+#inicio .text{
+	display: flex;
+	flex-direction: column;
+}
+
+#inicio .text h3{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#inicio .text div{
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	/*min-height: 50vh;*/
+	/* overflow-x: hidden; */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px
+}
+
+.cardContainer {
+	position: relative;
+	width: 100%;
+	color: #fff;
+}
+
+.cardContainer .sombra,
+.cardContainer .card {
+	/*height: 155px;
+	width: 500px;*/
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+}
+
+.cardContainer .sombra {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(10px, 10px);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.cardContainer .card {
+	padding: 25px 35px 20px 30px;
+}
+
+.cardContainer .card h2{
+	display: flex;
+	justify-content: center;
+}
+
+#principaisAssuntos{
+	width: 100%;
+	padding: 40px;
+	color: #fff;
+	border: solid 2px red;
+
+}
+#principaisAssuntos h1{
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+#principaisAssuntos .assuntos{
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+#principaisAssuntos .assuntosItem {
+	position: relative;
+}
+#principaisAssuntos .assuntosItem div{
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	background-color: #201b2c;
+	text-align: center;
+	padding: 13px;
+}
+#principaisAssuntos .assuntos .sombra{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform: translate(15px, 15px);
+	z-index: -1;
+}
+
+#sobreOMemo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#sobreOMemo > div{
+	width: 40%;
+	color: #fff;
+}
+#sobreOMemo h1{
+	margin-bottom: 20px;
+}
+
+#depoimentos{
+	border: 2px solid yellow;
+	text-align: center;
+	color: #fff
+}
+.carrosel{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.carrosel div{
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	padding: 10px;
+	width: 240px;
+}
+.carrosel div img{
+	width: 100px;
+	border-radius: 50%;
+}
+
+#depoimentos .carrosel p {
+	word-break: break-all;
+}
+
+/* Login Page */
+.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+	gap: 6em;
+}
+.login img{
+	width: 30%;
+}
+.login form{
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 10px;
+	color: #fff;
+}
+.login form h1{
+	text-align: center;
+	color: #00ff88;
+	margin-bottom: 20px;
+}
+.login form input{
+	width: 350px;
+	height: 35px;
+	background-color: transparent;
+	border: 1px solid #00ff88;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	color: #fff;
+	padding: 0px 10px;
+}
+.login form div button{
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login form div{
+	display: flex;
+	justify-content: center;
+}
+.login form label{
+	margin-left: 15px;
+}
+
+
+/* Page Cadastro */
+.formCadastro{
+	width: 100vw;
+	height: 95vh;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+.formCadastro .formContainer{
+	width: 40vw;
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	padding: 40px 40px;
+	margin-top: 5vh;
+}
+.formCadastro .formContainer h1{
+	text-align: center;
+	color: #00ff88;
+	margin-bottom: 15px;
+}
+.formCadastro .formContainer form{
+	display: none;
+	transition: all 3s ease;
+}
+.formCadastro .formContainer form input{
+	background-color: transparent;
+	border: 1px solid #00ff88;
+	border-radius: 10px;
+	height: 2.4em;
+	padding: 0px 10px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.formCadastro .formContainer form div{
+	display: flex;
+	flex-direction: column;
+}
+.formCadastro .formContainer form section{
+	display: flex;
+	justify-content: space-between;
+}
+.formCadastro .formContainer form section div input{
+	width: 225px;
+}
+.formButtons{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.formButtons > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px #00ff88;
+	border-radius: 35px;
+}
+.formButtons button{
+	background: transparent;
+	border-radius: 33px;
+	transition: all .3s ease;
+}
+.formButtons button.active{
+	background-color: #00ff88;
+}
+
+.formCadastro .formContainer .dadosPessoais.active, .formCadastro .formContainer .dadosEndereco.active {
+	display: initial;
+}

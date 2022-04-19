@@ -1,0 +1,114 @@
+
+/*User Page*/
+.pageUser{
+	display: flex;
+	color: #fff;
+	width: 100%;
+}
+.menuUsuario{
+	background-color: #2B2637;
+	width: 250px;
+	height: 100vh;
+	position: relative;
+	padding: 20px;
+
+}
+.usuario{
+	text-align: center;
+}
+.usuario img{
+	width: 90px;
+	border-radius: 50%;
+	border: 2px solid #00ff88;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.barraPesquisa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #00ff88;
+	border-radius: 6px;
+	height: 40px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding: 10px;
+}
+.barraPesquisa input{
+	background-color: transparent;
+	color: #fff;
+	border:none;
+	outline: none;
+	width: 100%;
+	padding: 10px;
+	width: 150px;
+}
+.menu ul li{
+	list-style: none;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 0 10px;
+}
+.menu ul li:hover {
+	background-color: #00ff88;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+.menu ul li a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	transition: all 0.3s;
+	border-radius: 10px;
+	padding: 5px;
+}
+.conteudo{
+	width: 80%;
+	text-align: center;
+}
+.conteudo .listasVistas p{
+	color: #2B2637;
+}
+
+.assuntos{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.assuntos .assuntosListas {
+	position: relative;
+}
+.assuntos .assuntosListas > div{
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	height: 100%;
+	width: 90%;
+	background-color: #201b2c;
+	text-align: center;
+	padding: 13px;
+}
+.assuntos .sombra{
+	height: 100%;
+	width: 90%;
+	position: absolute;
+	transform: translate(15px, 15px);
+	z-index: -1;
+}
+
+
+/* page de perguntas */
+
+.conteudoPage{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.pergunta{
+	border: 2px solid #00ff88;
+	border-radius: 10px;
+	width: 80%;
+	height: 70%;
+}
